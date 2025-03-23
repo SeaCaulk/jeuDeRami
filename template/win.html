@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Victoire ! 🎉</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    <style>
+        .win-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .win-gif {
+            width: 300px; /* Ajuste la taille si nécessaire */
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="win-container">
+        <h1>🎉 Félicitations {{ winner }} ! 🎉</h1>
+        <p>Tu as atteint 51 points et gagné la partie !</p>
+        <img src="{{ url_for('static', filename='img/applause.gif') }}" alt="Applause GIF" class="win-gif">
+        <br>
+        <a href="{{ url_for('index') }}" class="btn">Revenir à l'accueil</a>
+    </div>
+</body>
+
+</html>

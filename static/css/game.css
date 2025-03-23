@@ -1,0 +1,108 @@
+/* 🔹 Conteneur du jeu */
+.game-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🔹 Informations du jeu */
+.game-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Zone des cartes posées */
+#gameBoard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.placed-card {
+    width: 75px;
+    height: 115px;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.placed-card:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Zone des cartes en main */
+.player-hand {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hand-card {
+    width: 90px;
+    height: 130px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.hand-card:hover {
+    transform: scale(1.1);
+}
+
+/* 🔹 Boutons */
+.game-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 10px;
+}
+
+.game-button:hover {
+    background-color: #0056b3;
+}
+
+/* 🔹 Animation de victoire */
+.winner {
+    animation: winner-glow 1.5s infinite alternate;
+}
+
+@keyframes winner-glow {
+    0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+    50% { box-shadow: 0 0 20px rgba(255, 215, 0, 1); }
+    100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.8); }
+}
+
+.win-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.win-gif {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff9900;
+}

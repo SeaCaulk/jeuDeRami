@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  {% include("layout/head.html") %}
+  <title>Mode Multijoueur</title>
+</head>
+
+<body>
+  {% include("layout/nav.html") %}
+
+  <main class="container mt-5">
+    <h2 class="mb-4">🎮 Mode Multijoueur</h2>
+
+    <!-- Créer une nouvelle partie -->
+    <form action="/create_game" method="post" class="mb-4">
+      <div class="mb-3">
+        <label for="player_name_create" class="form-label">Ton nom (créateur) :</label>
+        <input type="text" class="form-control" id="player_name_create" name="player_name" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Créer une partie</button>
+    </form>
+
+    <hr>
+
+    <!-- Rejoindre une partie -->
+    <form action="/join_game" method="post">
+      <div class="mb-3">
+        <label for="game_id" class="form-label">ID de la partie :</label>
+        <input type="text" class="form-control" id="game_id" name="game_id" required>
+      </div>
+      <div class="mb-3">
+        <label for="player_name_join" class="form-label">Ton nom :</label>
+        <input type="text" class="form-control" id="player_name_join" name="player_name" required>
+      </div>
+      <button type="submit" class="btn btn-success">Rejoindre la partie</button>
+    </form>
+  </main>
+
+  {% include("layout/footer.html") %}
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.fa-user-circle
+{
+color:rgb(88, 113, 135);
+}
+
+/*####################################################
+Modifier ici
+#####################################################*/
+
+#hero .carousel-item::before {
+    background-color: none;
+}
+
+#hero .carousel-item:nth-child(2)::before {
+    background-color: rgba(13, 30, 45, 0.178);
+  }
+  
+  #hero .carousel-item:nth-child(3)::before {
+    background-color: rgba(13, 30, 45, 0.322);
+  }

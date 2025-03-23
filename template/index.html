@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  {% include("layout/head.html") %}
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  {% include("layout/nav.html") %}
+
+  <!-- ======= Diaporama Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('/static/img/slide/slide-7.png');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Jeu de <span>Rami</span></h2>
+                <p class="animate__animated animate__fadeInUp">Bienvenu sur notre site de rami en ligne !</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('/static/img/slide/slide-5.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Jeu de <span>Rami</span></h2>
+                <p class="animate__animated animate__fadeInUp">Que vous soyez simplement curieux de jeux de cartes ou expert en la matière, nous vous donnons toutes les cartes en main pour réussir !</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('/static/img/slide/slide-6.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Jeu de <span>Rami</span></h2>
+                <p class="animate__animated animate__fadeInUp">Vous pouvez consulter les règles, jouer ou consulter le leaderboard</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <h2>ENAC</h2>
+            <h3>École Nationale de l'Aviation Civile</h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              L'École nationale de l'aviation civile (ENAC) est un grand établissement français d'enseignement supérieur et de recherche aéronautique, créé en 1949. Il est placé sous la tutelle du minist
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  {% include("layout/footer.html") %}
+
+</body>
+
+</html>

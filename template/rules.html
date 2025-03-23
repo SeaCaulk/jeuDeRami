@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  {% include("layout/head.html") %}
+  <title>Règles du Jeu - Rami</title>
+</head>
+
+<body>
+
+  {% include("layout/nav.html") %}
+
+  <main class="container my-5">
+    <section class="text-center mb-5">
+      <h1 class="display-4">📜 Règles du jeu de Rami</h1>
+      <p class="lead">Bienvenue ! Voici toutes les informations pour bien jouer et découvrir nos différents modes de jeu.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>🎯 Objectif du jeu</h2>
+      <p>
+        Le <strong>Rami</strong> est un jeu de cartes stratégique. Le but est de composer des combinaisons de cartes pour atteindre un total de <strong>51 points</strong> ou plus, puis de se défausser de toutes ses cartes pour remporter la partie.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2>🃏 Composition du jeu</h2>
+      <ul>
+        <li>Cartes de 7 à As dans 4 couleurs : <span style="color:red;">♥</span> ♥, ♦, ♠, ♣</li>
+        <li>2 jeux de 52 cartes (donc 104 cartes en tout)</li>
+        <li>Valeur des cartes :
+          <ul>
+            <li>7 à 10 : valeur faciale (ex : 9 = 9 pts)</li>
+            <li>Valet (J), Dame (Q), Roi (K) : 10 pts</li>
+            <li>As (A) : 11 pts</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>🔄 Déroulement d’un tour</h2>
+      <ol>
+        <li><strong>Piocher</strong> une carte : soit visible, soit face cachée</li>
+        <li><strong>Poser</strong> une ou plusieurs combinaisons (optionnel)</li>
+        <li><strong>Donner</strong> une carte au talon visible</li>
+        <li>Le tour passe au joueur suivant</li>
+      </ol>
+    </section>
+
+    <section class="mb-5">
+      <h2>🧩 Combinaisons possibles</h2>
+      <ul>
+        <li><strong>Brelan</strong> : 3+ cartes de même valeur (ex : 9♦ 9♠ 9♣)</li>
+        <li><strong>Suite</strong> : 3+ cartes consécutives de la même couleur (ex : 7♣ 8♣ 9♣)</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>🏆 Fin de partie</h2>
+      <p>La partie s’arrête lorsqu’un joueur a atteint <strong>au moins 51 points</strong> et s’est défaussé de toutes ses cartes. Il est alors déclaré vainqueur.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>🎮 Modes de jeu</h2>
+
+      <h4>👤 Mode Solo – <em>“Tout seul ;-;”</em></h4>
+      <p>Entraînez-vous seul pour vous familiariser avec les règles et tester des stratégies.</p>
+
+      <h4>🧍🧍 Mode 2 Joueurs Local – <em>“Contre humain”</em></h4>
+      <p>Deux joueurs jouent sur le même appareil, chacun son tour. Le jeu alterne automatiquement les actions des joueurs.</p>
+
+      <h4>🌐 Mode Multijoueur en ligne – <em>“Multijoueur (beta)”</em></h4>
+      <ul>
+        <li>Permet à deux joueurs de jouer à distance (sur réseau local ou via Internet)</li>
+        <li>Un joueur héberge une partie, l’autre la rejoint via un identifiant de session</li>
+        <li>Le jeu est mis à jour en temps réel grâce à Flask</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>🧠 Conseils de stratégie</h2>
+      <ul>
+        <li>Gardez toujours des cartes utiles à plusieurs combinaisons</li>
+        <li>Observez les cartes que pose ou prend l’adversaire</li>
+        <li>Posez vos combinaisons dès que vous atteignez 51 points</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>❓ FAQ</h2>
+      <ul>
+        <li><strong>Combien de joueurs ?</strong> De 1 à 2 joueurs en local ou en ligne</li>
+        <li><strong>Le jeu est-il sauvegardé ?</strong> Oui, les données sont enregistrées dans un fichier `jeu.txt`</li>
+        <li><strong>Peut-on rejouer une partie ?</strong> Oui, rafraîchissez ou relancez la session</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>📜 Crédits</h2>
+      <p>Projet développé dans le cadre d’un projet scolaire à l’<strong>ENAC</strong>. Conçu avec Flask, HTML/CSS, et passion ❤️.</p>
+    </section>
+
+  </main>
+
+  {% include("layout/footer.html") %}
+
+</body>
+
+</html>
