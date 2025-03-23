@@ -23,8 +23,8 @@ Le jeu prend en charge :
 
 1. Clone le projet ou télécharge les fichiers :
    ```bash
-   git clone https://github.com/ton-projet/kam-fin.git
-   cd kam-fin
+   git clone https://github.com/SeaCaulk/jeuDeRami.git
+   cd jeuDeRami
    ```
 
 2. (Facultatif) Crée un environnement virtuel :
